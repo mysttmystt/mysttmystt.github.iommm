@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Sudais,</strong>
+                        <p>
+                            So i dont really know what guys like but take this code i made as a gift.
+                            Happy birthday and although its been a few months of me knowing you i know i wanna spend the rest of your birthdays with you.
+                            Enjoy your 20TH ur officially unc status and ill be there for the next while annoying you about it mwah
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+            <div class="balloons">
+                <div class="balloon" style="animation-delay: 0s;"></div>
+                <div class="balloon" style="animation-delay: 2s;"></div>
+                <div class="balloon" style="animation-delay: 4s;"></div>
+                <div class="balloon" style="animation-delay: 6s;"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <style>
+        body {
+            background-color: #6495ED; /* Dark blue background */
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Stack elements vertically */
+            font-family: Arial, sans-serif; /* Optional: sets the font */
+        }
+        h1 {8
+            text-align: center; /* Centering text within the element */
+            margin: 20px 0; /* Spacing above and below the title */
+        }
+        img {
+            display: block;
+            margin: 20px auto; /* Centering the image */
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1> bagellover1738 sent a gift, do you wish to proceed?</h1>
+    <!-- Adding a GIF -->
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3pxeW1zOHBndzhwc3ZqdnRzOGV6ZGNlaTk5YzY4aXNydDNnNWxjMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rBszdmXbzglQUX7N4j/giphy.gif" alt="Animated HTML Code GIF">
+    <button onclick="handleAnswer('OBVIOUSLY?')">OBVIOUSLY?</button>
+    <button onclick="handleAnswer('No(liar)')">No(liar)</button>
+
+    <script>
+        function handleAnswer(answer) {
+            if (answer === 'OBVIOUSLY?') {
+                window.location.href = 'yes.html'; // Redirect to the "OBVIOUSLY?" page
+            } else {
+                window.location.href = 'no.html'; // Redirect to the "No" page
+            }
+        }
+    </script>
+</body>
+</html>

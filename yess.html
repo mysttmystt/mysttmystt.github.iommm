@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <style>
+        body {
+            background-color: #6495ED; /* Dark blue background */
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Stack elements vertically */
+            font-family: Arial, sans-serif; /* Optional: sets the font */
+        }
+        h1 {
+            text-align: center; /* Centering text within the element */
+            margin: 20px 0; /* Spacing above and below the title */
+        }
+        img {
+            display: block;
+            margin: 20px auto; /* Centering the image */
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Last question. Do you think im awesome?</h1>
+    <!-- Adding a GIF -->
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3pxaDUyaWV5ajlhamd4OGZnYXJsazA5MmppNm1hdGF4bmJleHliNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GeimqsH0TLDt4tScGw/giphy.gif" alt="Animated HTML Code GIF">
+    <button onclick="handleAnswer('of course youre like the coolest person ever')">of course youre like the coolest person ever</button>
+    <button onclick="handleAnswer('there is no disagreement. But heres a lesser option')">No</button>
+
+    <script>
+        function handleAnswer(answer) {
+            if (answer === 'of course youre like the coolest person ever') {
+                window.location.href = 'Birthday.html'; // Redirect to the "Yes" page
+            } else {
+                window.location.href = 'no.html'; // Redirect to the "No" page
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <style>
+        body {
+            background-color: #6495ED; /* Dark blue background */
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Stack elements vertically */
+            font-family: Arial, sans-serif; /* Optional: sets the font */
+        }
+        h1 {
+            text-align: center; /* Centering text within the element */
+            margin: 20px 0; /* Spacing above and below the title */
+        }
+        img {
+            display: block;
+            margin: 20px auto; /* Centering the image */
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1> Good. Now whats 9 + 10?</h1>
+    <!-- Adding a GIF -->
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXd6cmludWFwMTB6YnNpeXo5MzZuM2ZjcDQ3a2NhN3N0c2NzaGRyeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wr7oA0rSjnWuiLJOY5/giphy.gif" alt="Animated HTML Code GIF">
+    <button onclick="handleAnswer('21(you next year)')">21(you next year)</button>
+    <button onclick="handleAnswer('19(not you anymore lol)')">19(not you anymore lol)</button>
+
+    <script>
+        function handleAnswer(answer) {
+            if (answer === '21(you next year)') {
+                window.location.href = 'yess.html'; // Redirect to the "Yes" page
+            } else {
+                window.location.href = 'no.html'; // Redirect to the "No" page
+            }
+        }
+    </script>
+</body>
+</html>
